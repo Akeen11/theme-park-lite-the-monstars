@@ -1,4 +1,6 @@
-let db = require('./db-calls.js');
+"use strict"
+
+let db = require("./db-calls.js");
 let writeArea = require ("./area")
 
 let parkArea = {};
