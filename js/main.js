@@ -6,5 +6,4 @@ let areaList = require("./areaList")
 
 // areaList();
 
-console.log("park info from main", parkInfo)
 // infoSection.innerHTML = parkInfo;
