@@ -5,16 +5,14 @@ let writeType = require("./type");
 
 let parkTypes = {};
 
-db.fetchTypes()
-    .then((result) => {
-        parkTypes = result
-        parkTypes.forEach(key => {
-            document.getElementById("attractionTypes").innerHTML += writeType.writeType(key.name);
-        return parkTypes
+let writeTypeToDOM = () => {
+    db.fetchTypes()
+        .then((result) => {
+            parkTypes = result
+            parkTypes.forEach(key => {
+                document.getElementById("attractionTypes").innerHTML += writeType.writeType(key.name);
+            })
         })
-    }).then((result) => {
-        // console.log("parkTypes from parkTypes.js", result)
-    })
-    ;
+};
 
-module.exports = parkTypes
+module.exports = writeTypeToDOM
