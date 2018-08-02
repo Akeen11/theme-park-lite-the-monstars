@@ -10,7 +10,7 @@ let writeAttactionsToDOM = () => {
         .then((result) => {
             parkAttractions = result;
             parkAttractions.forEach(key => {
-                document.getElementById("attractionsFull").innerHTML += writeAttractions.writeAttractions(key.name, key.description);
+                document.getElementById("attractionsFull").innerHTML += writeAttractions.writeAttractions(key.name, key.description, key.area_id, key.type_id);
             })
         });
 }

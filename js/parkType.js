@@ -3,6 +3,7 @@
 let db = require("./db-calls.js");
 let writeType = require("./type");
 
+
 let parkTypes = {};
 
 let writeTypeToDOM = () => {
@@ -10,7 +11,7 @@ let writeTypeToDOM = () => {
         .then((result) => {
             parkTypes = result
             parkTypes.forEach(key => {
-                document.getElementById("attractionTypes").innerHTML += writeType.writeType(key.name);
+                document.querySelectorAll(".attractionTypes").innerHTML += writeType.writeType(key.name);
             })
         })
 };
