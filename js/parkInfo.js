@@ -11,4 +11,4 @@ db.fetchParkInfo()
         })
     })
 
-module.exports = parkInfo   
+module.exports = parkInfo

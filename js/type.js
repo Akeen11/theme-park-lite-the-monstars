@@ -6,7 +6,6 @@ let writeType = (name) => {
 
     let word = uppercaseFirstLetter + stringWithoutFirstLetter
     return `<h1>${word}</h1>`
-    
 }
 
 module.exports = { writeType };

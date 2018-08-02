@@ -4,6 +4,7 @@
 let parkInfo = require("./parkInfo");
 let areaList = require("./areaList")
 let parkType = require("./parkType")
+let attractions = require("./parkAttractions")
 
 // areaList();
 
